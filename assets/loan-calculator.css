@@ -1,0 +1,140 @@
+.loan-calculator-widget {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f9f9;
+}
+
+.loan-calculator-widget label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.loan-calculator-widget input[type="number"],
+.loan-calculator-widget input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Ensures that each radio button pair is on a new line */
+    gap: 10px;
+}
+
+.radio-group div {
+    display: flex;
+    align-items: center; /* Ensures the radio button and label are aligned horizontally */
+}
+
+.radio-group label {
+    margin-left: 5px; /* Adds space between the radio button and the label */
+}
+
+/* Amortized Loan Styling */
+#wpapps-amortized-loan-calculator {
+    border-color: #007bff;
+}
+
+#wpapps-amortized-title {
+    color: #007bff;
+}
+
+#wpapps-amortized-details {
+    background-color: #f0f8ff;
+}
+
+#wpapps-loan-amount-amortized,
+#wpapps-interest-rate-amortized,
+#wpapps-loan-term-years-amortized,
+#wpapps-loan-term-months-amortized,
+#wpapps-payment-amount-amortized {
+    width: 100%;
+}
+
+/* Deferred Loan Styling */
+#wpapps-deferred-loan-calculator {
+    border-color: #28a745;
+}
+
+#wpapps-deferred-title {
+    color: #28a745;
+}
+
+#wpapps-deferred-details {
+    background-color: #e8f5e9;
+}
+
+#wpapps-loan-amount-deferred,
+#wpapps-interest-rate-deferred,
+#wpapps-loan-term-years-deferred,
+#wpapps-loan-term-months-deferred,
+#wpapps-payment-amount-deferred {
+    width: 100%;
+}
+
+/* Combined Loan Styling */
+#wpapps-combined-loan-calculator {
+    border-color: #ff6347;
+}
+
+#wpapps-combined-title {
+    color: #ff6347;
+}
+
+#wpapps-amortized-details-combined {
+    background-color: #f0f8ff;
+}
+
+#wpapps-deferred-details-combined {
+    background-color: #e8f5e9;
+}
+
+#wpapps-loan-amount-combined,
+#wpapps-interest-rate-combined,
+#wpapps-loan-term-years-combined,
+#wpapps-loan-term-months-combined,
+#wpapps-payment-amount-combined {
+    width: 100%;
+}
+
+/* Custom Styling */
+div#wpapps-deferred-loan-calculator {
+    margin-top: 20px;
+}
+
+input#wpapps-loan-term-years-amortized,
+input#wpapps-loan-term-years-deferred,
+input#wpapps-loan-term-years-combined {
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+input#wpapps-loan-term-months-amortized,
+input#wpapps-loan-term-months-deferred,
+input#wpapps-loan-term-months-combined {
+    width: 20%;
+}
+
+#wpapps-deferred-details,
+#wpapps-amortized-details,
+#wpapps-deferred-details-combined,
+#wpapps-amortized-details-combined {
+    background-color: unset;
+}
+
+#wpapps-amortized-details p,
+#wpapps-deferred-details p,
+#wpapps-amortized-details-combined p,
+#wpapps-deferred-details-combined p {
+    margin-bottom: unset;
+}
